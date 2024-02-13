@@ -7,7 +7,7 @@ title: Charter for Compassion
 url: https://charterforcompassion.org/
 locations:
   - Bainbridge Island, Washington, USA
-start: "2009"
+start: 2009
 end: 
 size: 4-10
 image: /assets/charterforcompassion.jpg
@@ -28,9 +28,13 @@ https://charterforcompassion.org/#
 ![[assets/charterforcompassion.jpg]]
 ## Key People
 
+- Karen Armstrong, Founder
+- Marilyn Turkovich, Executive Director
+
 ## Key Educational Resources
 
-Compassionate Education resources: https://charterforcompassion.org/what-we-do/offer-compassionate-education/offer-compassionate-education.html
+- Compassionate Education resources: https://charterforcompassion.org/what-we-do/offer-compassionate-education/offer-compassionate-education.html
+- Grassroots Wisdom Book: https://charterforcompassion.org/what-we-do/build-compassionate-communities/grassroots-wisdom-book.html
 
 ## Theory of Change
 
@@ -46,3 +50,8 @@ https://charterforcompassion.org/
 They believe that sustainable change emerges from communities.  Thus, they facilitate connections between people, partners, and programs to support outcomes to increase compassion. 
 
 ## Connections
+
+### Inspirations & Influences
+
+- Lao Tzu
+- Roshi Joan Halifax
