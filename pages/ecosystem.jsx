@@ -18,13 +18,13 @@ const Hero = () => (
 
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 my-20">
-            <button onClick={() => window.location.href = 'publications/map-paradigmatic-changemakers'} className="bg-amber-500 hover:bg-teal-600 text-white font-bold tracking-wide py-2 px-4 rounded">
+            <button onClick={() => window.location.href = '#graphic'} className="bg-amber-500 hover:bg-teal-600 text-white font-bold tracking-wide py-2 px-4 rounded">
               What does it look like?
             </button>
             <button onClick={() => window.location.href = '#projects'} className="bg-amber-500 hover:bg-teal-600 text-white font-bold tracking-wide py-2 px-4 rounded">
               Who is part of it?
             </button>
-            <button className="bg-amber-500 hover:bg-teal-600 text-white font-bold tracking-wide py-2 px-4 rounded">
+            <button onClick={() => window.location.href = '#resources'} className="bg-amber-500 hover:bg-teal-600 text-white font-bold tracking-wide py-2 px-4 rounded">
               Learn more
             </button>
             <a href="https://lifeitself.org/get-involved"><button className="bg-amber-500 hover:bg-teal-600 text-white font-bold tracking-wide py-2 px-4 rounded">
@@ -35,7 +35,44 @@ const Hero = () => (
       </div>
 );
 
-const Landscape = () => (
+const New = () => (
+  <div id="next" className="overflow-hidden bg-white pt-12 sm:pt-24">
+    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div className="lg:ml-auto lg:pl-4 lg:pt-4">
+          <div className="lg:max-w-lg">
+            <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            A new ecosystem for social change is gaining traction
+            </h1>
+            <p className="mt-6 text-2xl font-serif leading-8 text-gray-600">
+        We are seeing a growing ecosystem of people and organisations who are recognising the need for a <span className="underline">major civilisational transition</span> from Modernity 
+to a <span className="underline">new cultural paradigm</span>. They are choosing alternative ways of living and working to support that shift.
+        <br></br><br></br>
+        We’ve been mapping it since 2019, and know others who have been mapping it too. 
+We’ve profiled over 200 organisations who are part of it, and outlined some of the ecosystem's key characteristics.
+        </p>
+        <div className="mt-10 flex items-center justify-center gap-x-6 my-20">
+            <button onClick={() => window.location.href = '#projects'} className="bg-teal-600 hover:bg-teal-400 text-white font-bold tracking-wide py-2 px-4 rounded">
+              See mapping projects
+            </button>
+          </div>
+          </div>
+        </div>
+        <div className="flex items-start justify-end order-first py-20">
+          <img
+            src="/assets/Screenshot 2024-04-08 at 14.41.54.png"
+            alt=""
+            className="max-w-none md:-ml-4 lg:-ml-0 bg-yellow-200 w-full"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+
+const Graphic = () => (
+  <div id="graphic">
   <figure className="mt-16">
           <img
             className="rounded-xl bg-gray-50 object-cover"
@@ -44,29 +81,10 @@ const Landscape = () => (
           />
           <figcaption className="mt-4 flex gap-x-2 text-l leading-6 text-gray-500">
             <p className="mt-0.5 h-5 w-5 flex-none text-gray-300"/>
-            Read more about this map <a href="/publications/map-paradigmatic-changemakers">here</a>
+            This map is currently a work in progress. The final version and write-up will be available soon.
           </figcaption>
         </figure>
-);
-
-const New = () => (
-  <div className="bg-white px-6 py-24 sm:py-32 lg:px-8 -mb-40">
-      <div className="mx-auto max-w-4xl text-center">
-        <h2 className="text-4xl font-bold tracking-normal text-gray-900 sm:text-6xl mb-10">A new ecosystem for social change is gaining traction</h2>
-        <p className="mt-6 text-2xl font-serif leading-8 text-gray-600">
-        We are seeing a growing ecosystem of people and organisations who are recognising the need for a <span className="underline">major civilisational transition</span> from Modernity 
-to a <span className="underline">new cultural paradigm</span>. They are choosing alternative ways of living and working to support that shift.
-        <br></br><br></br>
-        We’ve been mapping it since 2019, and know others who have been mapping it too. 
-We’ve profiled over 200 organisations who are part of it, and outlined some of the ecosystem's key characteristics.
-        </p>
-      </div>
-      <div className="mt-10 flex items-center justify-center gap-x-6 my-20">
-            <button onClick={() => window.location.href = '#projects'} className="bg-teal-600 hover:bg-teal-400 text-white font-bold tracking-wide py-2 px-4 rounded">
-              See mapping projects
-            </button>
-          </div>
-    </div>
+        </div>
 );
 
 const Potential = () => (
@@ -89,7 +107,7 @@ const But = () => (
   <div className="bg-white px-6 py-24 sm:py-32 lg:px-8 -mb-40">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="text-4xl font-bold tracking-normal text-gray-900 sm:text-6xl mb-10">But at the moment it is difficult to discover, engage with, and make sense of</h2>
-        <p className="mt-6 text-2xl font-serif leading-8 text-gray-600">
+        <p className="mt-6 text-2xl font-serif leading-8 text-gray-600 pb-20 mb-20">
         The ecosystem is currently vague, complex, and sprawling. Some of the many names and terms associated with it are: <span className="underline">Integral, 
         Metamodern, Regenerative, Metacrisis-aware, Liminal Web, Game B</span>, and more.  
         <br></br><br></br>
@@ -97,11 +115,6 @@ const But = () => (
         makes it hard to talk about</span>, both within the ecosystem and especially to others outside it. <span className="underline">This, in turn, makes effective and strategic collective action more difficult</span>.
         </p>
       </div>
-      <div className="mt-10 flex items-center justify-center gap-x-6 my-20">
-            <a href="https://google.com"><button className="bg-teal-600 hover:bg-teal-400 text-white font-bold tracking-wide py-2 px-4 rounded">
-              See mapping projects
-            </button></a>
-          </div>
     </div>
 );
 
@@ -110,9 +123,8 @@ const Mapping = () => (
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="text-4xl font-bold tracking-normal text-gray-900 sm:text-6xl mb-10">Mapping the Emerging Ecosystem</h2>
         <p className="mt-6 text-2xl font-serif leading-8 text-gray-600">
-        There may never be a clear, singular identity and direction for the ecosystem. However, we think that mapping
-        supports greater understanding, interconnectedness, and coherence within the ecosystem, as well as greater 
-        visibility, accessibility, and credibility outside it. 
+        There may never be a clear, singular identity and direction for the ecosystem. However, we think that <span className="underline">mapping</span> supports <span className="underline">greater 
+        understanding, interconnectedness, and coherence</span> within the ecosystem, as well as greater <span className="underline">visibility, accessibility, and credibility</span> outside it. 
         </p>
         <div className="mt-6 text-2xl font-serif leading-8 text-gray-600 text-left">
           <p className="-mb-10">Some of the questions currently animating our work are...</p>
@@ -125,17 +137,12 @@ const Mapping = () => (
           </ul>
         </div>
       </div>
-      <div className="mt-10 flex items-center justify-center gap-x-6 my-20">
-            <a href="https://google.com"><button className="bg-teal-600 hover:bg-teal-400 text-white font-bold tracking-wide py-2 px-4 rounded">
-              See mapping projects
-            </button></a>
-      </div>
   </div>
 );
 
 const Resources = () => {
   return (
-    <div className="bg-white px-6 py-24 sm:py-32 lg:px-8 -mb-40">
+    <div id="resources" className="bg-white px-6 py-24 sm:py-32 lg:px-8 -mb-40">
     <h2 className="pb-10 text-4xl font-bold font-headings tracking-tight text-center">Key Resources</h2>
     <p className="pb-10 text-2xl font-serif text-gray-600 text-center">Essential resources for exploring and making sense of the emerging Second Renaissance ecosystem</p>
     <ul role="list" className="mx-auto my-6 !pl-0 grid max-w-2xl grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -164,7 +171,7 @@ const Resources = () => {
       <div className="group relative flex flex-col items-start gap-y-3 m-0 p-0">
         <div role="heading" className="text-base font-semibold text-primary">
           <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
-          <a href="/initiatives/conscious-coliving" className="flex flex-col gap-y-3 transition font-medium text-primary group-hover:text-secondary">
+          <a href="/glossary" className="flex flex-col gap-y-3 transition font-medium text-primary group-hover:text-secondary">
             <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
             <img src="/assets/img/glossary-romain-vignes-unsplash.jpg" className="z-10 w-full mb-2 aspect-video object-cover object-left m-0 rounded-lg shadow-sm" alt="Conscious Coliving"/>
             <span className="relative z-10">Glossary of Key Terms</span>
@@ -215,7 +222,7 @@ const Page = () => {
     <>
       <Hero></Hero>
       <New></New>
-      <Landscape></Landscape>
+      <Graphic></Graphic>
       <Potential></Potential>
       <But></But>
       <Mapping></Mapping>
