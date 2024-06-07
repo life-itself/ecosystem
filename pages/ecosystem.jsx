@@ -27,7 +27,7 @@ const Hero = () => (
             <a href="#resources" className="btn btn-blue">
               Learn more
             </a>
-            <a href="/join" className="btn btn-blue">
+            <a href="#contribute" className="btn btn-blue">
               Get involved
             </a>
           </div>
@@ -180,7 +180,7 @@ const Resources = () => {
 
 const Projects = () => {
   return (
-    <div id="projects" className="bg-white px-6 py-24 sm:py-32 lg:px-8 -mb-40">
+    <div id="projects" className="bg-white px-6 py-24 sm:py-32 lg:px-8">
     <h2 className="pb-10 text-4xl font-bold font-headings tracking-tight text-center">Our Mapping Projects</h2>
     <p className="pb-10 text-2xl font-serif text-gray-600 text-center">We've been mapping the ecosystem since 2019. We've created directories of organisations who are part of it, outlined some key characteristics, and created visual maps.</p>
     <ul role="list" className="mx-auto my-6 !pl-0 grid max-w-2xl grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -211,6 +211,37 @@ const Projects = () => {
   );
 }
 
+const Contribute = () => {
+  return (
+    <div id="contribute" className="bg-teal-50 px-6 py-24 sm:py-32 lg:px-8">
+    <h2 className="pb-10 text-4xl font-bold font-headings tracking-tight text-center">Ways to Contribute</h2>
+    <ul role="list" className="mx-auto my-6 !pl-0 grid max-w-2xl grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div className="group relative flex flex-col items-start gap-y-3 m-0 p-0">
+        <div role="heading" className="text-base font-semibold text-primary">
+          <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
+          <a href="https://forms.gle/tMbshHWdYdbB2Y718" className="flex flex-col gap-y-3 transition font-medium text-primary group-hover:text-secondary">
+            <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <img src="/assets/img/org-suggestion-form.png" className="z-10 w-full mb-2 aspect-video object-cover object-left m-0 rounded-lg shadow-sm" alt="Conscious Coliving"/>
+            <span className="relative z-10">Suggest organisations</span>
+          </a>
+        </div>
+        <p className="relative z-10 text-sm text-primary/80 line-clamp-3">Who's missing from the maps? Please recommend organisations or initiatives in the ecosystem.</p>
+      </div>
+      <div className="group relative flex flex-col items-start gap-y-3 m-0 p-0">
+        <div role="heading" className="text-base font-semibold text-primary">
+          <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
+          <a href="/contact" className="flex flex-col gap-y-3 transition font-medium text-primary group-hover:text-secondary">
+            <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <img src="/assets/img/2r-discord-2.png" className="z-10 w-full mb-2 aspect-video object-cover object-left m-0 rounded-lg shadow-sm" alt="Conscious Coliving"/>
+            <span className="relative z-10">Get in touch</span>
+          </a>
+        </div>
+        <p className="relative z-10 text-sm text-primary/80 line-clamp-3">For other ways to get involved, please get in touch.</p>
+      </div>
+    </ul>
+    </div>
+  )
+}
 const Page = () => {
   return (
     <>
@@ -222,6 +253,7 @@ const Page = () => {
       <Mapping></Mapping>
       <Resources></Resources>
       <Projects></Projects>
+      <Contribute></Contribute>
     </>
   );
 };
